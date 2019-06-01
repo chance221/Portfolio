@@ -10,10 +10,6 @@ body{
     line-height: 1.5;
 }
 
-/* main{
-    /* display:block; 
-} */
-
 .headshot{
     position:fixed;
     border-radius: 50%;
@@ -29,6 +25,7 @@ h1{
     z-index: 6;
     text-align: right;
 }
+
 
 #navBar{
     position:fixed;
@@ -72,13 +69,10 @@ h1{
 .menu-icon{
     /* display: inline-block; */
     position: fixed;
-    
-    margin-block-end:end;
     margin: 0 auto;
     z-index: 5;
     padding: .5em;
     /* padding-left: 0em; */
-    width:100%;
     background-color: darkblue;
 }
 
@@ -87,8 +81,8 @@ h1{
     text-align: center;
     list-style: none;
     z-index:2;
-    background: rgb(133, 83, 224);
-    width: 50%;
+    background: black;
+    width:20%;
     color: white;
     padding-top: 3.9em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
