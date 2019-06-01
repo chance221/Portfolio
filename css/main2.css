@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+.headshot{
+    position:fixed;
+    border-radius: 50%;
+    max-width: 15vw;
+    left: 10px;
+    z-index:10;
+    border:black, 5px, solid; 
+}
+
+.nav{
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+h1{
+    font-size:20px;
+    font-weight:lighter;
+}
+
+h2, h3{
+    
+    font-weight:100;
+}
+
+.border{
+    width:70vw;
+    border-bottom:.5px solid black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.first, .second, .third{
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:30px;
+    padding-bottom:100px
+}
+
+.second{
+    margin-bottom:50px;
+}
+
+/* .first{
+    padding:30px;
+} */
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-container{
+    position:fixed;
+    right: 20px;
+    top:10px;
+}
+
+.title-container{
+    background-color:black;
+}
+
+.text-bg{
+    background-color:rgba(0, 0, 0, 0.6);
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
