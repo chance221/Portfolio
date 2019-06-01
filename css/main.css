@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* main{
+    /* display:block; 
+} */
+
+.headshot{
+    position:fixed;
+    border-radius: 50%;
+    max-width: 15vw;
+    left: 0;
+    z-index:10;
+    border:black, 5px, solid; 
+}
+
+h1{
+    position:fixed;
+    right:100px;
+    z-index: 6;
+    text-align: right;
+}
+
+#navBar{
+    position:fixed;
+    height: 6em;
+    /* display: inline-block; */
+    z-index:5;
+    top: 3em;
+    
+}
+
+.nav{
+    background-color:gray
+}
+
+.hide{
+    margin-top: -11em;;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.bar1.change{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change.bar2 {opacity: 0;}
+  
+.change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu-icon{
+    /* display: inline-block; */
+    position: fixed;
+    
+    margin-block-end:end;
+    margin: 0 auto;
+    z-index: 5;
+    padding: .5em;
+    /* padding-left: 0em; */
+    width:100%;
+    background-color: darkblue;
+}
+
+#menu-items{
+    position: fixed;
+    text-align: center;
+    list-style: none;
+    z-index:2;
+    background: rgb(133, 83, 224);
+    width: 50%;
+    color: white;
+    padding-top: 3.9em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu-items ul{ 
+    margin: none !important;
+}
+
+#menu-items li{ 
+    margin: none !important;
+}
+
+#menu-items li a{
+    border-style: solid;
+    border-top:  solid rgb(43, 149, 190);
+    border-left-style: none;
+    border-bottom: none;
+    display:inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    color: white;
+}
+
+
+
+  
+/* https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
