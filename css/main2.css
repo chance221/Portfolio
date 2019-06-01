@@ -2,10 +2,18 @@
     box-sizing: border-box;
 }
 
+html { 
+    background: url(../media/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body{
     font-family: "Oswald", sans-serif;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
     text-align: center;
     line-height: 1.5;
     
@@ -59,13 +67,13 @@ header{
 }
 
 .head-name{
-    width: 50vw;
+    min-width: 60vw;
     margin: 0;
     padding: 0;
     display: inline-block;
     text-align: right;
     position: relative;
-    right: -25px;
+    right: -15px;
     bottom: -8px;
 }
 
@@ -76,14 +84,12 @@ header{
     display:inline-block;
 }
 
-.head-name{
-    width:55vw
-}
 
 h1{
     font-size:1rem;
     font-weight:lighter;
     text-align:center;
+    
 }
 
 h2, h3{
@@ -96,6 +102,10 @@ h2, h3{
     border-bottom:.5px solid black;
     margin-left:auto;
     margin-right:auto;
+}
+
+.top{
+    padding-top:40px;
 }
 
 .first, .second, .third{
@@ -121,13 +131,64 @@ h2, h3{
     transition: 0.4s;
 }
 
+.bar1.change{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change.bar2 {opacity: 0;}
+  
+.change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hide{
+    margin-top: -300px;
+}
+
+#menu-items{
+    position: fixed;
+    right:0px;
+    text-align: left;
+    list-style: none;
+    z-index:2;
+    background: black;
+    /* width:20vw; */
+    color: white;
+    /* padding-top: 1.9em; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu-items ul{ 
+    margin: none !important;
+}
+
+#menu-items li{ 
+    margin: none !important;
+}
+
+#menu-items li a{
+    border-style: solid;
+    border-top:  solid rgb(43, 149, 190);
+    border-left-style: none;
+    border-bottom: none;
+    display:inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    color: white;
+    text-decoration:none;
+    font-size:.65em;
+}
 
 
 .text-bg{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.3);
     width:80vw;
     margin-left:auto;
     margin-right:auto;
+    margin-top:150px;
     
 }
 
