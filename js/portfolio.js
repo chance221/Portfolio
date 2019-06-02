@@ -9,3 +9,14 @@ $(".js-menu-icon").click( function (){
     $(".bar3").toggleClass("change")
     $("#menu-items").toggleClass("hide", 800, "easeOutQuint")
 })
+let w= document.documentElement.scrollWidth
+function toggleHide(w){
+    
+    console.log(w);
+
+    if(w > 400){
+        $("#menu-items").removeClass("hide")
+    }
+}
+
+toggleHide();

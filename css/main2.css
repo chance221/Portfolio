@@ -8,6 +8,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
   }
 
 body{
@@ -16,7 +17,8 @@ body{
     color: rgb(255, 255, 255); 
     text-align: center;
     line-height: 1.5;
-    
+    background-color:rgba(0, 0, 0, 0.3);
+    max-width:100vw;
 }
 
 .nav{
@@ -73,8 +75,10 @@ header{
     display: inline-block;
     text-align: right;
     position: relative;
-    right: -15px;
+    right: -1px;
     bottom: -8px;
+    font-size:20px;
+    color:rgb(43, 149, 190);
 }
 
 .title-container{
@@ -105,24 +109,31 @@ h2, h3{
 }
 
 .top{
-    padding-top:40px;
+    padding-top:10px;
 }
 
-.first, .second, .third{
-    margin-top:50px;
+ .third{
+    margin-top:0px;
     margin-bottom:50px;
-    padding:30px;
+    padding-top:0px;
     padding-bottom:100px
 }
 
 .second{
     margin-bottom:50px;
+    margin-left:0;
 }
 
-/* .first{
-    padding:30px;
-} */
+.first{
+    margin-top:15px;
+    margin-bottom:10px;
+    padding-bottom:20px;
+    padding-top:20px
+}
 
+.intro .second p{
+    text-align:left;
+}
 .bar1, .bar2, .bar3 {
     width: 25px;
     height: 5px;
@@ -131,6 +142,21 @@ h2, h3{
     transition: 0.4s;
 }
 
+.intro{
+    padding-top:8vh;
+    padding-bottom:20px;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    width: 90vw;
+    text-align:center;
+}
+
+.intro p{
+    background-color:black;
+    color:white;
+    font-weight: lighter
+}
 .bar1.change{
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -144,19 +170,34 @@ h2, h3{
 }
 
 .hide{
-    margin-top: -300px;
+    margin-top: -450px;
+}
+
+.symbol{
+    width:15px;
+    height:15px;
+}
+
+.top{
+    font-size: 14px;
+    
+}
+
+.top a{
+    text-decoration:none;
+    color:white;
 }
 
 #menu-items{
     position: fixed;
     right:0px;
-    text-align: left;
+    text-align: right;
     list-style: none;
     z-index:2;
     background: black;
     /* width:20vw; */
     color: white;
-    /* padding-top: 1.9em; */
+    padding-top: 2vh; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -184,27 +225,112 @@ h2, h3{
 
 
 .text-bg{
-    background-color:rgba(0, 0, 0, 0.3);
-    width:80vw;
+    /* background-color:rgba(0, 0, 0, 0.3); */
+    width:100vw;
+    /* margin-left:0;
+    margin-right:0; */
+    margin-top:50px;
+    padding-left:0;
+}
+
+.intro p{
+    margin-left:0;
+}
+
+/* .first.border h2{
+    
+} */
+.center{
+    text-align:center;
     margin-left:auto;
-    margin-right:auto;
-    margin-top:150px;
+    margin-right: auto;
+}
+.text{
+    text-align:left;
+    background-color: rgba(255, 255, 255, 1);
+    width:98vw; 
+    padding-left:0;
+    margin-left:0;
+    height: 80vh;
+    overflow:scroll;
+    color:black
     
 }
 
+.bio {margin-left:0;
+margin-right:auto;
+padding-left:0;
+width:90vw;
+text-align:left;
+padding-bottom:10px
+    
+}
+
+.project{
+    
+    color: white;
+    background-color:black
+}
+
+.project-description{
+    text-align:left;
+    background-color:rgba(0, 0, 0, 0.6)
+}
+
+.project a:visited{
+    text-decoration:none;
+    color:rgb(164, 246, 246);
+}
+
+.proj-img{
+    width:30vw;
+    height:30vh;
+    float:right;
+    max-width:125px;
+    
+}
 footer{
     background-color:black;
     color:white;
 }
 
+
 @media screen and (min-width: 400px) {
     body {
-      background-color: lightgreen;
+      display:flex;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    #menu-items{
+        display:flex;
+    }
+
+    .first{
+        padding-top:50px;
+    }
+
+    .text{
+        width:90vw;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+        overflow:auto;
+    }
+
+    .bio{
+        height:auto
     }
   }
   
   @media screen and (min-width: 800px) {
     body {
-      background-color: lavender;
+      
     }
   }
