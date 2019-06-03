@@ -29,6 +29,7 @@ body{
     display:inline-block;
     margin:0;
     padding:0;
+    
 }
 
 header{
@@ -83,7 +84,7 @@ header{
 
 .title-container{
     background-color:black;
-    
+    max-height:12vw;
     width:100vw;
     display:inline-block;
 }
@@ -326,6 +327,10 @@ footer{
 
     .bio{
         height:auto
+    }
+
+    .head-name{
+        float:right;
     }
   }
   
