@@ -268,14 +268,15 @@ padding-bottom:10px
 }
 
 .project{
-    
+    margin: 50px;
     color: white;
     background-color:black
 }
 
 .project-description{
-    text-align:left;
-    background-color:rgba(0, 0, 0, 0.6)
+    
+    background-color:rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
 }
 
 .project a:visited{
@@ -286,8 +287,9 @@ padding-bottom:10px
 .proj-img{
     width:30vw;
     height:30vh;
-    float:right;
+
     max-width:125px;
+    max-height:160px;
     
 }
 footer{
@@ -332,6 +334,12 @@ footer{
     .head-name{
         float:right;
     }
+
+    .first{
+        padding-top:150px;
+        padding-bottom:100px;
+    }
+    
   }
   
   @media screen and (min-width: 800px) {
